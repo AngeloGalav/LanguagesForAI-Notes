@@ -1,0 +1,148 @@
+{
+  "main": {
+    "id": "14ef2e3ccb7ceda0",
+    "type": "split",
+    "children": [
+      {
+        "id": "cfd7b1f92c0e86c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52aa885aacf3ad98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Module2/2022-11-23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e6f16af23c70329f",
+    "type": "split",
+    "children": [
+      {
+        "id": "feef6f3a1f62ed4b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "791e523b4f974d7a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d43984e6ff6d634b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9aa3a82f3aa56b87",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9ce7d3b40739e28f",
+    "type": "split",
+    "children": [
+      {
+        "id": "f547e395606b70d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1742817a5d012069",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Module2/2022-11-23.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ecdad7d78cb5e876",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Module2/2022-11-23.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "41ae9b300ce409b9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "38b1722ac4b86250",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Module2/2022-11-23.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "791e523b4f974d7a",
+  "lastOpenFiles": [
+    "Module2/2022-11-16.md",
+    "Module2/2022-11-23.md",
+    "Module2/2022-11-14 - Logical Truth.md",
+    "Module1/Python Recap.md",
+    "Images/Syntax_bnf.png",
+    "Images/useful_equivalence_rules.png"
+  ]
+}
