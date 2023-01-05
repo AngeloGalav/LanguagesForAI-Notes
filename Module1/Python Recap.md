@@ -427,4 +427,5 @@ x=np.array([[1,2,3,4],[5,6,7,8]])
 x[0,2] # to access a 2-array
 ```
 
-![[ndarray.png]]![[Screenshot_20221117_030030.png]]
+![[ndarray.png]]
+![[np_array_matrix_order.png]]
