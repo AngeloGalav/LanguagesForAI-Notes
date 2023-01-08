@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/7. LP Syntax & Semantics.md",
                 "mode": "source",
                 "source": false
               }
@@ -71,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "??",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/7. LP Syntax & Semantics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/7. LP Syntax & Semantics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md"
+                "file": "Module2/Digest/7. LP Syntax & Semantics.md"
               }
             }
           },
@@ -180,13 +181,13 @@
   },
   "active": "a778335d9ae57254",
   "lastOpenFiles": [
-    "Module2/Digest/9. CLP.md",
     "Module2/Digest/8. Prolog.md",
-    "Module2/Digest/3. Propositional Logic.md",
+    "Module2/Digest/7. LP Syntax & Semantics.md",
     "Module2/Digest/6. Logic Programming (LP).md",
+    "Module2/Digest/9. CLP.md",
+    "Module2/Digest/3. Propositional Logic.md",
     "append_example.png",
     "README.md.md",
-    "Module2/Digest/7. LP Syntax & Semantics.md",
     "Module2/Digest/5. FOL.md",
     "Images/substitution.png",
     "Images/closures.png"
