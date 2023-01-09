@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/9. CLP.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/9. CLP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/9. CLP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md"
+                "file": "Module2/Digest/9. CLP.md"
               }
             }
           },
@@ -155,17 +155,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6b5b0df35638bdf",
+  "active": "791e523b4f974d7a",
   "lastOpenFiles": [
-    "Module2/Digest/7. LP Syntax & Semantics.md",
+    "Module2/Digest/5. FOL.md",
+    "Module2/Digest/9. CLP.md",
     "Module2/Digest/8. Prolog.md",
+    "Module2/Digest/7. LP Syntax & Semantics.md",
     "Module2/Digest/6. Logic Programming (LP).md",
     "Images/proof_example.png",
     "Images/dag_example.png",
-    "Module2/Digest/9. CLP.md",
     "Images/transition_rules_form.png",
     "Module2/Digest/3. Propositional Logic.md",
-    "append_example.png",
-    "README.md.md"
+    "append_example.png"
   ]
 }
