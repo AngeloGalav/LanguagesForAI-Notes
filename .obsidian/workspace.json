@@ -88,8 +88,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,15 +180,15 @@
   },
   "active": "a778335d9ae57254",
   "lastOpenFiles": [
-    "Module2/Digest/8. Prolog.md",
-    "Module2/Digest/7. LP Syntax & Semantics.md",
     "Module2/Digest/6. Logic Programming (LP).md",
+    "Module2/Digest/7. LP Syntax & Semantics.md",
+    "Module2/Digest/8. Prolog.md",
     "Module2/Digest/9. CLP.md",
+    "Images/transition_rules_form.png",
     "Module2/Digest/3. Propositional Logic.md",
     "append_example.png",
     "README.md.md",
     "Module2/Digest/5. FOL.md",
-    "Images/substitution.png",
-    "Images/closures.png"
+    "Images/substitution.png"
   ]
 }
