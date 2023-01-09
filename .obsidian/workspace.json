@@ -8,41 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3a3c7c446ce78e7c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Images/proof_example.png"
-              }
-            }
-          },
-          {
-            "id": "a778335d9ae57254",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Module2/Digest/7. LP Syntax & Semantics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c6b5b0df35638bdf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module2/Digest/6. Logic Programming (LP).md",
+                "file": "Module2/Digest/8. Prolog.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Module2/Digest/7. LP Syntax & Semantics.md",
+                "file": "Module2/Digest/8. Prolog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Module2/Digest/7. LP Syntax & Semantics.md",
+                "file": "Module2/Digest/8. Prolog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Module2/Digest/7. LP Syntax & Semantics.md"
+                "file": "Module2/Digest/8. Prolog.md"
               }
             }
           },
@@ -178,17 +155,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a778335d9ae57254",
+  "active": "c6b5b0df35638bdf",
   "lastOpenFiles": [
-    "Module2/Digest/6. Logic Programming (LP).md",
     "Module2/Digest/7. LP Syntax & Semantics.md",
     "Module2/Digest/8. Prolog.md",
+    "Module2/Digest/6. Logic Programming (LP).md",
+    "Images/proof_example.png",
+    "Images/dag_example.png",
     "Module2/Digest/9. CLP.md",
     "Images/transition_rules_form.png",
     "Module2/Digest/3. Propositional Logic.md",
     "append_example.png",
-    "README.md.md",
-    "Module2/Digest/5. FOL.md",
-    "Images/substitution.png"
+    "README.md.md"
   ]
 }
