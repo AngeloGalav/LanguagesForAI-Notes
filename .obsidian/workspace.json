@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fb4e88e44064e3c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Module2/Digest/3. Propositional Logic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "??",
+                "query": "DNF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,12 +78,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9ce7d3b40739e28f",
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/3. Propositional Logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md",
+                "file": "Module2/Digest/3. Propositional Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Module2/Digest/8. Prolog.md"
+                "file": "Module2/Digest/3. Propositional Logic.md"
               }
             }
           },
@@ -155,17 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6b5b0df35638bdf",
+  "active": "fb4e88e44064e3c3",
   "lastOpenFiles": [
-    "Module2/Digest/5. FOL.md",
+    "Module2/Digest/9. CLP.md",
+    "Module2/Digest/0. Some notes.md",
     "Module2/Digest/8. Prolog.md",
+    "Module2/Digest/5. FOL.md",
     "Module2/Digest/7. LP Syntax & Semantics.md",
     "Module2/Digest/6. Logic Programming (LP).md",
     "Module2/Digest/3. Propositional Logic.md",
-    "Module2/Digest/9. CLP.md",
     "Module2/2022-11-02 - Intro.md",
     "Module2/2022-11-14 - Logical Truth.md",
-    "Module2/2022-11-16.md",
-    "Module2/2022-11-23.md"
+    "Module2/2022-11-16.md"
   ]
 }
