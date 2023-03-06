@@ -8,29 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "022d18212e1d6546",
+            "id": "14a472b90b705869",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module3/2023-03-06.md",
+                "file": "Module3/2023-03-07.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "14a472b90b705869",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Images/a_times.png"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Images/a_times.png",
+                "file": "Module3/2023-03-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Images/a_times.png",
+                "file": "Module3/2023-03-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Images/a_times.png"
+                "file": "Module3/2023-03-07.md"
               }
             }
           },
@@ -165,11 +154,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "791e523b4f974d7a",
+  "active": "14a472b90b705869",
   "lastOpenFiles": [
-    "Images/task_vs_processes.png",
-    "Images/a_times.png",
     "Module3/2023-03-06.md",
+    "Module3/2023-03-07.md",
+    "Images/turing_machine.png",
+    "Images/a_times.png",
+    "Images/task_vs_processes.png",
     "Module3/2023-02-28.md",
     "Module3/2023-02-28 1.md",
     "Images/cop_slide.png",
