@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9ce7d3b40739e28f",
@@ -156,12 +157,13 @@
   },
   "active": "14a472b90b705869",
   "lastOpenFiles": [
+    "formal_model.png",
+    "Module3/2023-02-28.md",
     "Module3/2023-03-06.md",
     "Module3/2023-03-07.md",
     "Images/turing_machine.png",
     "Images/a_times.png",
     "Images/task_vs_processes.png",
-    "Module3/2023-02-28.md",
     "Module3/2023-02-28 1.md",
     "Images/cop_slide.png",
     "Images/summary.png",
