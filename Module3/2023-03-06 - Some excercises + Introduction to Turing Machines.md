@@ -39,13 +39,12 @@ This would increase the complexity of the enconding.
 >Remember, the floor ($\lfloor \ \rfloor$) sign is regarded as the encoding sign. 
 
 2. The solution is actually very simple because the disjoint union $X \overset{\cdot}{\cup} Y$ is defined as $\{(l,x) | x \in X\} \cup \{(r, y) | y \in Y\}$. 
-We can immediately realize that $l$ and $r$ can be encoded as one little prefix consisting in a bit, so $N \overset{\cdot}{\cup} \{0,1\}^*$
-
-\[..\]
-
+We can immediately realize that $l$ and $r$ can be encoded as one little prefix consisting in _a bit_, so $N \overset{\cdot}{\cup} \{0,1\}^*$
+can be encoded as follows
+![[encoding_1.png]]
 3. Graphs are usually taken as equivalent when they are isomorphic, i.e. their sets of nodes are in bijective correspondance, and edges are coherent with that correspondence. For example:
 
-\[image here\]
+![[graph.png]]
 
 The precise nature of the set of nodes does not matter, what matters is the cardinality.
 The set of nodes, then, can be taken to be $\{1,2,3,...,n\}$ for a certain $n \in N$.
