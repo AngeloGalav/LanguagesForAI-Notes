@@ -1,3 +1,8 @@
+----
+## TODO:
+- aggiungere ultime due slide alla fine
+---
+
 ![[formal_model.png]]
 
 In turing machines, computation happens _locally_. 
@@ -14,7 +19,6 @@ Each of the tape is infinite on the right hand side, but during the computation 
 #### Machine description
 - It consists of $k$ tapes, where a tape is an infinite one-directional line of cells, each of which can hold a simbol from a _finite_ alphabel $Γ$, the _alphabet_ of the machine. 
 	- once you fix the machine, $k$ is fixed: $k$ cannot be in the function of the algorithm/input. 
-	- ??
 
 - Each tape is equipped with tape head, which can read or write one symbol at a time from or to the tape. Each head can move left or right. 
 
@@ -99,3 +103,5 @@ Examples:
 
 In all the cases above (and in many others), one can prove that _the more restrictive notion of machine simulates the more general one with polynomial overhead_. 
 - We do not have time to see all that, but you are encouraged to take a look at [AroraBarak2009], Section 1.3.1.
+
+\[aggiungere ultime due slide\]

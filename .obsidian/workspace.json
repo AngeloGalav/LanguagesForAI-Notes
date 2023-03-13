@@ -11,9 +11,11 @@
             "id": "14a472b90b705869",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Images/encoding_1.png"
+                "file": "Module3/2023-03-13.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9ce7d3b40739e28f",
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Images/encoding_1.png",
+                "file": "Module3/2023-03-13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Images/encoding_1.png",
+                "file": "Module3/2023-03-13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Images/encoding_1.png"
+                "file": "Module3/2023-03-13.md"
               }
             }
           },
@@ -152,12 +155,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "791e523b4f974d7a",
+  "active": "14a472b90b705869",
   "lastOpenFiles": [
     "Module3/2023-03-07 - Turing Machines.md",
+    "Module3/2023-03-13.md",
+    "Images/encoding_1.png",
     "Module3/2023-03-06 - Some excercises + Introduction to Turing Machines.md",
     "Images/graph.png",
-    "Images/encoding_1.png",
     "Module3/2023-02-28 - Preliminaries.md",
     "Images/formal_model.png",
     "Images/turing_machine.png",
