@@ -1,42 +1,35 @@
----
-TODO:
-- aggiugni immagine in es3.3
----
 # Continuing excercises
 #### Excercise 3
 Classify the following languages as either decidable or undecidable:
-- The set of (encodings of) Turing machines which compute the $inc$ function from the previous excercise. 
-	- undecidable, because of Rice theorem -> non trivial, semantic set. 
+- The set of (encodings of) Turing machines which _compute_ the $inc$ function from the previous excercise. 
 - The set of Turing machines whose set of states includes a number of states between 10 and 27.
-	- decidable -> it does not refer to the semantic of the problem, but to the syntax. 
 - The set of terminating Turing machines satisfying the following property: whenever the machine finds itself in front of three consecutive zeros in the work tape it halts immediately. 
-	- It's not at all a semantic set, but we can reduce to a semantic set.  
 
 ##### Solution
 1. undecidable, because of Rice theorem -> non trivial, semantic set. 
-	- The first language, call it $L_{int}$, is semantic, moreover $L_{int}$ is not trivial because in the previous excercise we showed $L_{int}$ to be non-empty, and $L_{int} \ne \{0,1\}^*$
-	- i.e., the code of any turing machine computing the identity function $id : \{0,1\}^* \rightarrow \{0,1\}^*$ such that $id(x) = x$ cannot be $inc$.
+	- The first language, call it $L_{int}$, is _semantic_, moreover $L_{int}$ is _not trivial_ because in the previous excercise we showed $L_{int}$ to be non-empty, and $L_{int} \ne \{0,1\}^*$
+		- i.e., the code of any turing machine computing the identity function $id : \{0,1\}^* \rightarrow \{0,1\}^*$ such that $id(x) = x$ cannot be $inc$.
 	- We know, however, that semantic and nontrivial sets cannot be decidable, thanks to Rice theorem. 
 
 2. decidable -> it does not refer to the semantic of the problem, but to the syntax. 
-	- The second language, call it $L_{10to27}$, is indeed decidable. This is because exctracting the number of states from a Turing machine encoding is of course possible, because states are part of the definition of a turing machine. 
+	- The second language, call it $L_{10to27}$, is indeed _decidable_. This is because exctracting the number of states from a Turing machine encoding is of course possible, because _states are part of the definition of a turing machine_. 
 
-3. It's not at all a semantic set, but we can reduce to a semantic set.  
+3. It's not at all a semantic set, but we can reduce to a _semantic set_.  
 	- The third language, call it $L_{000}$, looks quite challenging and very likely it turns out to be undecidable. On the other hand, $L_{000}$ is not semantic, so we can't apply Rice theorem. How can we proceed then?
-	- The only other tool we know is reduction: $\phi : \{0,1\}^* \rightarrow \{0,1\}^*$, $\phi(x) \in L_{000} \iff x \in I$. 
-	- $I$ must be a language that we know already to be undecidable. We choose I as the halting problem, namely the enconding of pairs $(\alpha, x)$ such that $M_{\alpha}(x)$ converges. We are looking for a $\phi$ such that 
-	
-		\[oimage here\]
+	- The only other tool we know is _reduction_: $\phi : \{0,1\}^* \rightarrow \{0,1\}^*$, $\phi(x) \in L_{000} \iff x \in I$. 
+	- $I$ must be a language that _we know already to be undecidable_. We choose $I$ as the _halting problem_, namely the set of pairs $(\alpha, x)$ such that $M_{\alpha}(x)$ converges. We are looking for a reduction $\phi$ such that 
+	![[reduction 1.png]]
 		
-	- We can proceed by defining $\phi$ as follows: the code $\alpha$ is manipulated by making sure that the machine $\alpha$ encodes never writes the symbol 0 in the working tape. Instead, such machine $\phi(\alpha)$ uses a new symbol 0', which was not part of the alphabet of $\alpha$. 
-		- This way if $(\alpha, x)$ is in the halting language, of course $\phi(\alpha, x) = \phi(\alpha)$ is in $L_{000}$. (The the input $\phi(\alpha, x)$ simulates $\alpha$, but $x$ is thrown away -> this way it converges). 
+	- We can proceed by defining $\phi$ as follows: the code $\alpha$ is manipulated by making sure that the machine $\alpha$ encodes never writes the symbol $0$ in the working tape. Instead, such machine $\phi(\alpha)$ uses a new symbol $\hat 0$, which was not part of the alphabet of $\alpha$. 
+		- This way if $(\alpha, x)$ is in the halting language, of course $\phi(\alpha, x)$ $\in$ $L_{000}$. (The machine $\phi(\alpha, x)$ simulates $M_\alpha$, but $x$ is thrown away -> this way it converges). 
 		- Instead, if $(\alpha, x)$ is not an halting pair then $\alpha$ _is not a machine which always converges_, and as such $\phi(\alpha, x) \not \in L_{000}$.
-	- When $(\alpha, x)$ is in the halting problem, then machine $\alpha$ in the input $x$ terminates (always converges).  
+	- When $(\alpha, x)$ is in the halting problem, then machine $\alpha$ on the input $x$ terminates (always converges).  
 	- We modify $\alpha$ such that the machine always converges in order to satisfy the first condition. 
 
+-----
 # Complexity Classes
-- A complexity class is a set of tasks which can be computed within some prescribed resource bounds. 
-	- It is not a set of TMs, although it is defined based on TMs. 
+- A __complexity class__ is a set of tasks which can be computed within some _prescribed resource bounds_. 
+	- __It is not a set of TMs__, although it is defined based on TMs. 
 	- Typically, the task we are interested at are decision problems, or equivalently languages (i.e. subsets of $\{0, 1\}^∗$).
 
 - Let $T: N \rightarrow N$. A language $L$ is in the class $\text{DTIME}(T(n))$ iff there is a TM deciding $L$ and running in time $n \rightarrow c \cdot T(n)$ for some constant $c$. 
@@ -46,17 +39,17 @@ Classify the following languages as either decidable or undecidable:
 	- We need a larger class.
 
 ## Class P
-The class P is defined as follows:
+The class $P$ is defined as follows:
 $$
 P = \bigcup_{c \ge 1} \text{DTIME}(n^c)
 $$
-In other words, the class P includes all those languages L: 
+In other words, the class $P$ includes all those languages $L$: 
 1. which can be decided by a TM; 
 2. working in time $P$; 
 3. where $P$ is a any polynomial.
 
 - Indeed, for any any polynomial $P$ there are $c, d > 0$ such that $P(n) ≤ c · n^d$ for sufficiently large $n$.
-- Please observe that c and d can be arbitrarily large, so a TM deciding $L$ and working in time $10^{20} \cdot n^{10^{30}}$ is a witness of $L$ being in $P$. 
+- Please observe that $c$ and $d$ can be arbitrarily large, so a TM deciding $L$ and working in time $10^{20} \cdot n^{10^{30}}$ is a witness of $L$ being in $P$. 
 - $P$ is generally considered as <u>the</u> class of efficiently decidable languages.
 
 ## Church-Turing Thesis
@@ -68,7 +61,7 @@ But, again, why basing complexity theory on TMs? They are a rather simplicistic 
 - The __Strong Church-Turing Thesis__
 	- Every physically _realizable computer can be simulated by a TM_ with a _polynomial overhead_ in time ($n$ steps on the computer requires $n^c$ on TMs, where $c$ only depends on the computer), and viceversa. 
 	- The class $P$ would be the same if defined based on other realistic models of computation. 
-		- This means also that the class P is very robust -> it is not dipenedent on the computational model.
+		- This means also that the class $P$ is very robust -> _it is not depenedent on the computational model_.
 	- This is more controversial (due to, e.g., quantum computation). 
 
 ## Why Polynomials? 
@@ -78,30 +71,33 @@ But, again, why basing complexity theory on TMs? They are a rather simplicistic 
 	- In principle, the exponent $c$ bounding the time of any machine deciding $L ∈ P$ can be huge. 
 	- For many problems of interest and in $P$, there are TMs working within quadratic or cubic bounds. 
 - __Nice Closure Properties__ 
-	- The class is closed various operations on programs, e.g. composition and bounded loops (with some restrictions!). 
-	- As a consequence, it is relatively easy to prove that a given problem/task is _in_ the class: it suffices to give an algorithm solving the problem and working in polynomial time, without constructing the TM explicitly.
+	- The class is closed on various operations on programs, e.g. _composition_ and _bounded loops_ (with some restrictions!). 
+	- As a consequence, it is relatively easy to prove that a given problem/task is _in_ the class: it suffices to _give an algorithm_ solving the problem and _working in polynomial time_, without constructing the TM explicitly.
 
 ### Some Criticisms on P 
 - __Worst-Case is Not Realistic__ 
-	- The definition of P is intrinsically based on worst-case complexity: there must be a polynomial and a TM such that for every input. . . 
+	- The definition of $P$ is intrinsically based on _worst-case complexity_: there must be a polynomial and a TM such that for every input...
 	- It is good enough even if our problem takes little time on the types of inputs which arise in practice, and not on all of them. 
 	- Solutions: Average-case Complexity, Approximation Algorithms 
 - Alternative Computational Models 
 	- Feasibility can also be defined for classes dealing with arbitrary precision computation, with randomized computation, or with quantum computation. 
 	- Solutions: the class P can be redefined with other computational models in mind, giving rise to other classes (e.g. BPP or BQP). 
 - Why Just Decision Problems? 
-	- As alreday pointed out, not all tasks can be modeled this way
+	- As already pointed out, not all tasks can be modeled this way
 
 ### FP class
-Sometime, one would like to classify functions rather than languages. This can be done by slightly generalizing a couple of concepts we have previously introduced: 
-- Let $T : N → N$. A function f is in the class $\text{FDTIME}(T(n))$ iff there is a TM computing $f$ and running in time $n → c · T(n)$ for some constant $c$. 
+Sometimes, one would like to classify functions rather than languages. This can be done by slightly generalizing a couple of concepts we have previously introduced: 
+- Let $T : N → N$. A function $f$ is in the class $\text{FDTIME}(T(n))$ iff there is a TM computing $f$ and running in time $n → c · T(n)$ for some constant $c$. 
 - The class $FP$ is defined as follows, very similarly to $P$:
 $$
 FP = \bigcup_{c \ge 1}\text{FDTIME}(n^c)
 $$
-- For every $L ∈ P$, the characteristic function $f$ of $L$ is _trivially_ in $FP$.
+- For every $L ∈ P$, the _characteristic function_ $f$ of $L$ is trivially in $FP$.
 - For certain classes of functions (e.g. those corresponding to optimization problems), there are canonical ways to turn a function f into a language $L_f$ 
-	- In general, however, it is not true that $f ∈ FP$ implies $L_f ∈ P$.
+
+>[!WARNING]
+>So, $L_f \in P \implies f \in P$, but... 
+>In general, however, ==it is not true that $f ∈ FP$ implies $L_f ∈ P$==!!!
 
 ### Example of Problems in P or FP
 - Lists: inverting a list, sorting a list, finding the maximum or minimum element in a list, etc. 
@@ -113,14 +109,14 @@ $$
 ### How to Prove a task being in P or FP
 - In theory, one should give a TM working within some polynomial bounds, and prove that the machines decides the language (or computes the function). 
 - This is however too cumbersome, and instead of going through TMs, one often goes informal and uses the so called pseudocode. 
-- Example. 
+- Example:
 	- Suppose you want to show the following problem to be computable in polynomial time: given two strings $x, y ∈ \{0, 1\}^∗$, determine if $x$ contains an instance of $y$. 
 	- A pseudocode solving the problem above is the following:![[pseudocode_p_fp.png]]
 - How could we be sure that the algorithm above indeed works in polynomial time?
-1. The input can be easily encoded as a binary string. 
-2. The total number of instructions is polynomially bounded. 
-	- Indeed it is $O(|x|)$. 
-3. All _intermediate results_ are polynomially bounded in length. 
-	- Indeed, $i$ cannot be greater than $O(|x|)$, thus its length is $O(log|x|)$. 
-4. Each instruction takes polynomial time to be simulated. 
-	- Comparing two strings of length $|y|$ can be done in polynomial time in $|y|$, thus polynomial in $|\lfloor(x, y)\rfloor|$
+	1. The input can be _easily_ encoded as a _binary string_. 
+	2. The total number of instructions is _polynomially bounded_. 
+		- Indeed it is $O(|x|)$. 
+	3. All _intermediate results_ are _polynomially bounded_ in _length_. 
+		- Indeed, $i$ cannot be greater than $O(|x|)$, thus its length is $O(log|x|)$. 
+	4. Each _instruction_ takes _polynomial time_ to be simulated. 
+		- Comparing two strings of length $|y|$ can be done in polynomial time in $|y|$, thus polynomial in $|\lfloor(x, y)\rfloor|$

@@ -3,7 +3,7 @@
 ## Tasks vs Processes
 
 ==Don't confuse process with tasks!== 
-A task is the objective, the problem I actually want to solve, while the process is the tool (i.e. whatever we do) we use to solve the task. 
+A task is the _objective_, the problem I actually want to solve, while the process is the _tool_ (i.e. whatever we do) we use to solve the task. 
 ![[task_vs_processes.png]]
 - In some cases, there could be many distinct processes solving the same tasks (i can always do a stupid variation of a program using no-ops etc.). 
 	- Usually, a single process can only solve a single task.  
@@ -17,7 +17,7 @@ Let's see a simple example:
 
 Since addition of two n-digit numbers is a relatively easy process can easily be carried out in a linear amount of steps, the total number of steps is proportional to $b · n$. Call this process `RepeatedAddition`.
 
-Another process solving the task above consists in rather multipling $a$ and $b$ with the elementary school direct algorithm, which takes an amount of steps which is proportional to $n · n$. Call this process `GridMethod`. (Multiplying each digit of $a$ by one of $b$ etc, like in elementary school). 
+Another process solving the task above consists in rather multiplying $a$ and $b$ with the elementary school direct algorithm, which takes an amount of steps which is proportional to $n · n$. Call this process `GridMethod`. (Multiplying each digit of $a$ by one of $b$ etc, like in elementary school). 
 
 There is an exponential difference between the performances of `RepeatedAddition` and `GridMethod`. 
 - Indeed, $b$ can be exponential in $n$, i.e. at most $10^n − 1$. 
@@ -65,8 +65,8 @@ In this course, we will give a different, more abstract and low level, definitio
 
 # Mathematical Preliminaries
 ## Sets and Numbers 
-- The cardinality of any set $X$ is indicated as $|X|$. I It can be finite or infinite. 
-- We will mainly work with discrete numbers. 
+- The _cardinality_ of any set $X$ is indicated as $|X|$. I It can be finite or infinite. 
+- We will mainly work with _discrete numbers_. 
 	- $N$ is the set of natural numbers, while $Z$ is the set of integers. 
 - We say that a condition $P(n)$ depending on $n ∈ N$ holds for sufficiently large $n$ if there is $N ∈ N$ such that $P(n)$ holds for every $n > N$. 
 - Some common (and useful notation): 
@@ -122,12 +122,35 @@ An important class of functions from $\{0, 1\}^∗$ to $\{0, 1\}^∗$ are those 
 
 	- Example: the function $n → 3 · n^2 + 4 · n$ is $O(n^2)$, but also $O(n^3)$, and certainly $O(2^n)$. It is not, however, $O(n)$. 
 
+"It's included in..."
+
 - A function $f : N → N$ is $Ω(g)$ if there if a positive real constants $c$ such that $f(n) ≥ c · g(n)$ for sufficiently large $n$ 
 	
 	 - Example: the function $n → 3 · n^2 + 4 · n$ is $Ω(n^2)$, but also $Ω(n)$, but not $Ω(n^3 )$.
+
+"It's over the other functino"
 
  - A function $f$ is $Θ(g)$ if $f$ is both $O(g)$ and $Ω(g)$. 
 	 
   - Example: the function $n → 3 · n^2 + 4 · n$ is $Θ(n^2)$. 
   
-  Studying in which relation two functions $f$ and $g$ are can be done by studying the limit of $\dfrac{f(n)}{g(n)}$ for $n$ tending to infinity.
+  Studying in which relation two functions $f$ and $g$ are can be done _by studying the limit_ of $\dfrac{f(n)}{g(n)}$ for $n$ tending to infinity.
+
+# Excercise
+What is the cardinality of $S^n$, namely the set of all strings of length $n$ in $S$?
+Prove your claim. 
+
+#### Answer:
+$$
+|S^n| = |S|^n
+$$
+This can be proved by _induction_ on the value of the parameter $n$. In other words, we prove $\forall n. P(n)$ by proving that $P(0)$ and $\forall n. P(n) \rightarrow P(n+1)$. 
+Of course, $P(n)$ is  $|S^n| = |S|^n$ here. 
+
+Base case: ($P(0)$ is $|S^0| = |S|^0$)
+- $|S^0| = |\{ \epsilon \}|=1=|S|^0$.
+
+Inductive case:
+We have to prove that $|S^{n+1}| = |S|^{n+1}$ from $|S^{n}| = |S|^{n}$.
+- $|S^{n+1}| = |S \cdot S^{n}| = |S| \cdot |S^{n}|$
+- $= |S| \cdot |S|^{n}$ $= |S|^{n+1}$ 

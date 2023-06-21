@@ -1,14 +1,9 @@
-----
-Todos:
-- insert images of last excercise
----
 
-
-# Existance of the uncomputable functions
+# Existence of the uncomputable functions
 > [!Theorem]
 >There exists a function $uc : \{0, 1\}^∗ → \{0, 1\}^∗$ that is _not computable_ by any Turing Machine.
 
-While turing machines are as many as the natural numbers, the uncomputable functions are as many as the real numbers (so it's more). 
+While Turing machines are as many as the natural numbers (thus countable), the _un-computable functions are as many as the __real numbers___ (so it's more). 
 
 The proof of the Theorem above is constructive. It suffices to consider the function:
 $$
@@ -25,7 +20,7 @@ This trick of using both the program as input and as a program is called _diagon
 - Indeed, if $uc$ were computable, there would be a TM $M$ such that $M(α) = uc(α)$ for every $α$, and _in particular_ $\alpha = \lfloor M\rfloor$
 	- $M$ computes $uc$
 	- $\alpha$, in this case, is the code of $M$ itself.
-- This would be a contraddiction, because by definition:
+- This would be a contradiction, because by definition:
 $$
 uc(\lfloor M\rfloor) = 1 \iff M(\lfloor M\rfloor) \ne 1 \iff uc(\lfloor M\rfloor) = 0
 $$ 
@@ -33,7 +28,7 @@ $$
 	- $M$ is a machine that computes $uc$, so $M_{\lfloor M\rfloor}(\lfloor M\rfloor) = 1$, but in that case $uc$ is 0. 
 
 ### The Halting Problem
-The function $uc$ we proved uncomputable does not represent an interesting computationl task:
+The function $uc$ we proved uncomputable does not represent an interesting computationl task. Consider, instead, the function $halt$ defined as follows:
 $$
 halt(\lfloor (\alpha, x)\rfloor) =
 
@@ -50,7 +45,7 @@ Being able to compute $halt$ would mean being able to check algorithms for termi
 This result could be seen as a way to reinterpret Gödel’s first incompleteness theorem “computationally”.
 
 #### Diophantine equation decidability
-A diophantine equation is a polynomial equality with integer coefficents and finitely many unkowns
+A diophantine equation is a polynomial equality with integer coefficents and _finitely_ many unkowns
 - Examples
 	- $x^2 + 3y = 2x + 1$
 	- $x^4 + 3x^3 + y − z = 12$
@@ -69,7 +64,7 @@ A language $L ⊆ \{0, 1\}^∗$ is __semantic__ when
 
 >[!Theorem (Rice’s Theorem)] 
 >Any decidable language $L$ which respects functions (meaning, it _is semantic_) is _trivial_, i.e. either $L = ∅$ or $L = \{0, 1\}^∗$ .
-> - Any _extensional property_ of a_ language_ is trivial. 
+> - Any (decidable) _extensional property_ of a_ language_ is trivial. 
 > - By trivial, we mean that is a property satisfied by all programs, or any program. 
 
 # How to prove a problem to be Computable?
@@ -86,37 +81,39 @@ s \in G \iff \phi(s) \in L
 $$
 - This way, any hypothetical algorithm for $L$ would be turned into one for $G$. 
 	- You prove the non-existance of an algorithm by proving the existance of $\phi$ (another algorithm). 
-- You can use results like Rice’s Theorem. 
+- You can use results like __Rice’s Theorem__. 
 
-# Some excercises
-#### Excercise 1
-Prove the undieidability of the halting problem, namely the fact that the function
+# Some exercises
+#### Exercise 1
+Prove the undecidability of the halting problem, namely the fact that the function
 $$halt(\alpha, x) = \begin{cases}
 1 &\quad\text{if } M_{\alpha}(x) \text{ terminates} \\
 0 &\quad\text{otherwise} \\
 \end{cases}$$
-is uncomputable. 
+is _uncomputable_. 
 
 ##### Solution
 We show that from an hypothetical machine computing the function $halt$, call it $M_{halt}$, we can get another machine, call it $M_{uc}$ which computes $uc$, that we know is uncomputable.
+
 Let us see how we can turn $M_{halt}$ in $M_{uc}$:
 - On an input $\alpha$, $M_{uc}$ proceeds by calling $M_{halt}$ as an auxiliary function, and feeding it with $(\alpha, \alpha)$. 
 - $M_{uc}$ then waits until $M_{halt}$ returns a result. 
 	- In the case $M_{halt}$ returns 0 ($M_{\alpha} (\alpha)$ diverges), then $M_{uc}$ should return 1. 
 	- Instead, If $M_{halt}$ returns 1 ($M_{\alpha} (\alpha)$ converges), then $M_{uc}$ should call the _utm_ $U$ on $(\alpha, \alpha)$, because it knows that the machine $M_{\alpha}$ converges on $\alpha$. 
-		- We have to call $U$ instead of directly $uc$ because $uc$ is concerned with the result of the machine $M$, infact it only returns 0 when $M = 1$
+		- We have to call $U$ instead of directly $uc$ because $uc$ is concerned with the result of the machine $M$, in fact it only returns 0 when $M = 1$
 	- Let $b \in \{0,1\}$ be the result produced in output by $U$ on input $(\alpha, \alpha)$, then $M_{uc}$:
 		- returns 0 if $b = 1$.
 		- returns 1 otherwise.
 
-$M_{uc}$, as we defined it, is indeed a turing machine which computes the function $uc$. 
-But since we know that _such a machine cannot exist_, the only hypotesis we did (the existance of $M_{halt}$) _must be false_.  
+$M_{uc}$, as we defined it, is indeed a Turing machine which computes the function $uc$. 
+But since we know that _such a machine cannot exist_, the only hypotesis we did (the existence of $M_{halt}$) _must be false_.  
 
 #### Excercise 2
 Show that the function $inc : N \rightarrow N$ such that $inc(n) = n+1$ can be computed in linear time by explicitly constructing a turing machine for it. 
 
 ##### Solution
 $inc$ acts on $N$, so we need to find a way to encode elements of $N$ as binary strings.
+![[encodings.png]]
 To make a simple turing machine, we can consider the "reverse" binary encoding of numbers. 
 
 The turing machine at hand has:
@@ -124,6 +121,4 @@ The turing machine at hand has:
 - one tape which acts as the output tape, input tape and work tape. 
 - $\Gamma = \{\triangleright, \square, 0, 1\}$
 - the transistion function is the following:
-
-\[transition image here\]
-
+![[turing_machine 1.png]]
