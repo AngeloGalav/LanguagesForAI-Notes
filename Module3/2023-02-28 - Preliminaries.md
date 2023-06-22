@@ -136,6 +136,9 @@ An important class of functions from $\{0, 1\}^∗$ to $\{0, 1\}^∗$ are those 
   
   Studying in which relation two functions $f$ and $g$ are can be done _by studying the limit_ of $\dfrac{f(n)}{g(n)}$ for $n$ tending to infinity.
 
+##### An additional thing to remember:
+![[biggieo.png]]
+
 # Excercise
 What is the cardinality of $S^n$, namely the set of all strings of length $n$ in $S$?
 Prove your claim. 

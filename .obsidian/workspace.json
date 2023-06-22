@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "349d3ff3b976fc6e",
+        "id": "593aba30c3a1d6ad",
         "type": "tabs",
         "children": [
           {
-            "id": "05aee5f616c4e1d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Module3/2023-03-20 - Complexity class EXP and some exercises.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f804376ce3cd2c48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Module3/2023-03-21 - (x) Excercises on complexity and TM.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60ed16d61e4ad761",
+            "id": "0acb1aba1e2c9821",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,19 +20,42 @@
             }
           },
           {
-            "id": "fb86d740cda0014b",
+            "id": "0a12e5860908785c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module3/2023-03-27 - NP.md",
+                "file": "Module3/2023-02-28 - Preliminaries.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a3d8f67df1426a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Module3/2023-04-04 - (x) PAC-Learnable.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79a14f529dca85ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Module3/2023-05-02 - Representation Classes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "constructi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 275.5
   },
   "right": {
     "id": "9ce7d3b40739e28f",
@@ -201,40 +200,42 @@
   },
   "active": "791e523b4f974d7a",
   "lastOpenFiles": [
-    "Module3/2023-04-03 - (x) Excercises.md",
-    "Module3/2023-03-30 - NP, 2.md",
-    "Module3/2023-03-21 - (x) Excercises on complexity and TM.md",
-    "Module3/2023-05-02 - (x).md",
-    "Module3/2023-04-04 - (x).md",
-    "Images/ZOO-ofproblems.png",
-    "Module3/2023-03-27 - NP.md",
-    "Images/prop_logic_slide.png",
-    "Module3/2023-05-08 - (x) Excericises on PAC Learning.md",
-    "Images/solution_wedding.png",
-    "Images/reduction 2.png",
-    "Module3/2023-03-20 - Complexity class EXP and some exercises.md",
-    "Images/cost_of_each.png",
-    "Module3/2023-03-14 - Complexity Classes.md",
-    "Images/alg_stat.png",
-    "README.md.md",
     "Module3/2023-03-07 - Turing Machines.md",
     "Module3/2023-03-13 - Halting Problem, Rice Theorem (+ some excs).md",
-    "Images/reduction 1.png",
+    "Module3/2023-03-14 - Complexity Classes.md",
+    "Module3/Exercises/Virtuale problems.md",
+    "Module3/2023-03-20 - Complexity class EXP and some exercises.md",
+    "Module3/2023-03-21 - (x) Excercises on complexity and TM.md",
+    "Module3/2023-03-27 - NP.md",
+    "Module3/2023-04-03 - (x) Excercises.md",
     "Module3/2023-03-06 - Some excercises + Introduction to Turing Machines.md",
     "Module3/2023-02-28 - Preliminaries.md",
-    "Images/reduction.png",
-    "Images/certificate.png",
-    "Images/turing_machine 1.png",
+    "Module3/Exercises/From the excercise books.md",
+    "Module3/2023-05-08 - General excercises.md",
+    "Module3/2023-03-30 - NP, 2.md",
+    "Images/biggieo.png",
+    "Module3/2023-05-02 - Representation Classes.md",
+    "Module3/2023-04-04 - (x) PAC-Learnable.md",
+    "Images/halt_np.png",
+    "here.md",
+    "Module3/Untitled.md",
+    "Module3/Exercises/Untitled",
+    "Module3/Exercises",
+    "Images/2kinds.png",
+    "Images/abfp_theorem.png",
+    "Images/2pax.png",
+    "Images/abfp.png",
+    "Images/example_learning.png",
+    "Images/trainin_ai_clas.png",
+    "Images/pac1.png",
+    "Images/data_colas.png",
+    "README.md.md",
     "Module1/Python Recap.md",
     "Module3/2023-02-28 1.md",
     "Module2/Digest/8. Prolog.md",
     "Module2/Digest/5. FOL.md",
     "Module2/Digest/3. Propositional Logic.md",
     "Module2/Digest/9. CLP.md",
-    "Module2/Digest/0. Some notes.md",
-    "Module2/Digest/7. LP Syntax & Semantics.md",
-    "Module2/Digest/6. Logic Programming (LP).md",
-    "Module2/2022-11-02 - Intro.md",
-    "Module2/2022-11-14 - Logical Truth.md"
+    "Module2/Digest/0. Some notes.md"
   ]
 }
